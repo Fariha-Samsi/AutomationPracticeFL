@@ -17,7 +17,7 @@ public class DriverClass {
 		return driver;
 	}
 	
-	public DriverClass getClassInstance() {
+	public static DriverClass getClassInstance() {
 		if(classInstance == null)
 			 classInstance = new DriverClass(driver);
 		return classInstance; 
