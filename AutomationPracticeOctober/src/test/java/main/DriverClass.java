@@ -37,7 +37,7 @@ public class DriverClass {
 				 driver.get("https://www.google.com/");
 				 driver.navigate().to(url);
 			 }
-			 else if(browser.equalsIgnoreCase("firefox")) {
+			 else if(browser.equalsIgnoreCase("Firefox")) {
 				 driver = new FirefoxDriver();
 				 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 				 driver.manage().window().maximize();
