@@ -13,7 +13,7 @@ import com.google.common.io.Files;
 public class CommonFunctionUtil {
 
 	DriverClass dc = DriverClass.getClassInstance();
-	WebDriver driver = dc.getDriver();
+	WebDriver driver = DriverClass.getDriver();
 
 	public void goToUrl(String url) {
 		driver.get(url);
@@ -63,18 +63,36 @@ public class CommonFunctionUtil {
 			e.printStackTrace();
 		}	
 	}
-	
-	
+
+
 	public void takeScreenShot(String filename, String path) {
-		 File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE) ;
-		 
-		 try {
-			File destination = new File(filename+path+".jpg");
-			
-			Files.copy(source, destination);
-			
+
+		try {
+
+			File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE) ;
+
+			//File destination = new File(filename+path+".jpg");
+
+			Files.copy(source, new File(path+ filename +".jpg"));
+
 		} catch (IOException e) {
-			
+
+			System.out.println("Unable to take screenShot!");
+		}
+	}
+	
+	public void takeScreenShot(String filename) {
+
+		try {
+
+			File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE) ;
+
+			File destination = new File("C:\\Users\\verc8\\git\\AutomationPracticeFL\\Screenshot\\"+ filename +".jpg");
+
+			Files.copy(source, destination);
+
+		} catch (IOException e) {
+
 			System.out.println("Unable to take screenShot!");
 		}
 	}
