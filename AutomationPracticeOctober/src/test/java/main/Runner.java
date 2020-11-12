@@ -1,16 +1,19 @@
 package main;
 
-import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
 
-public class Runner {
+public class Runner extends Hooks {
 
-	public static void main(String[] args) {
-		WebDriver driver = null;
-		
-		DriverClass d = new DriverClass(driver);
+	@Test
+	public static void main() {
+
+		ObjectFactory of = new ObjectFactory();		
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\verc8\\git\\AutomationPracticeFL\\Drivers\\chromedriver.exe");
-		
-		d.openSingletonBrowser("chrome", "https://www.amazon.com/?tag=admarketus-20&ref=pd_sl_a77559ED8D65AA122020110223");
+
+		of.getCfu().takeScreenShot("HPage");
+
 	}
+
+
 
 }

@@ -13,7 +13,7 @@ public class DriverClass {
 	 private static DriverClass classInstance = null;
 	
 	
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		return driver;
 	}
 	
@@ -24,7 +24,7 @@ public class DriverClass {
 			
 	}
 	
-	 public DriverClass(WebDriver driver) {
+	 private DriverClass(WebDriver driver) {
 		driver = this.driver;
 	}
 	 
