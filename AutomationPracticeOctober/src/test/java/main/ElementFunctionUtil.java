@@ -23,4 +23,5 @@ public class ElementFunctionUtil {
 	public void sendkeys(String locator, String key) {
 		driver.findElement(By.xpath(locator)).sendKeys(key);
 	}
+	
 }

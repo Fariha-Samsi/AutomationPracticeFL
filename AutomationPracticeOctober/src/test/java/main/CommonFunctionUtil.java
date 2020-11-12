@@ -1,8 +1,14 @@
 package main;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Set;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
+import com.google.common.io.Files;
 
 public class CommonFunctionUtil {
 
@@ -56,5 +62,20 @@ public class CommonFunctionUtil {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}	
+	}
+	
+	
+	public void takeScreenShot(String filename, String path) {
+		 File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE) ;
+		 
+		 try {
+			File destination = new File(filename+path+".jpg");
+			
+			Files.copy(source, destination);
+			
+		} catch (IOException e) {
+			
+			System.out.println("Unable to take screenShot!");
+		}
 	}
 }
