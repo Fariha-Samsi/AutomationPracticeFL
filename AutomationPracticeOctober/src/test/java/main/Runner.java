@@ -11,6 +11,7 @@ public class Runner extends Hooks {
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\verc8\\git\\AutomationPracticeFL\\Drivers\\chromedriver.exe");
 
 		of.getCfu().takeScreenShot("HPage");
+		//of.getEfu().clickElement(of.getHpf().contactUsBtn());
 
 	}
 
