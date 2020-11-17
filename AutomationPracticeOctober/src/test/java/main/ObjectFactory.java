@@ -7,7 +7,9 @@ public class ObjectFactory {
 	private CommonFunctionUtil cfu;
 	private ElementFunctionUtil efu;
 	private DriverClass dc;
+	private HomePageFactory hpf;
 	WebDriver driver;
+	
 
 	public CommonFunctionUtil getCfu() {
 		cfu = new CommonFunctionUtil();
@@ -22,6 +24,10 @@ public class ObjectFactory {
 	public DriverClass getdc() {
 		dc = DriverClass.getClassInstance();
 		return dc;
+	}
+
+	public HomePageFactory getHpf() {
+		return hpf;
 	}
 
 }

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14841" started-at="2020-11-12T17:00:42 EST" finished-at="2020-11-12T17:00:57 EST">
+  <suite name="Default suite" duration-ms="15679" started-at="2020-11-16T11:59:55 EST" finished-at="2020-11-16T12:00:11 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14841" started-at="2020-11-12T17:00:42 EST" finished-at="2020-11-12T17:00:57 EST">
+    <test name="Default test" duration-ms="15679" started-at="2020-11-16T11:59:55 EST" finished-at="2020-11-16T12:00:11 EST">
       <class name="main.Runner">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:main.Runner@22a67b4]" name="openBrowser" is-config="true" duration-ms="13204" started-at="2020-11-12T17:00:42 EST" finished-at="2020-11-12T17:00:55 EST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:main.Runner@22a67b4]" name="openBrowser" is-config="true" duration-ms="10930" started-at="2020-11-16T11:59:55 EST" finished-at="2020-11-16T12:00:06 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="main()[pri:0, instance:main.Runner@22a67b4]" name="main" duration-ms="879" started-at="2020-11-12T17:00:55 EST" finished-at="2020-11-12T17:00:56 EST">
+        <test-method status="PASS" signature="main()[pri:0, instance:main.Runner@22a67b4]" name="main" duration-ms="3960" started-at="2020-11-16T12:00:06 EST" finished-at="2020-11-16T12:00:10 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:main.Runner@22a67b4]" name="quit" is-config="true" duration-ms="710" started-at="2020-11-12T17:00:56 EST" finished-at="2020-11-12T17:00:57 EST">
+        <test-method status="PASS" signature="quit()[pri:0, instance:main.Runner@22a67b4]" name="quit" is-config="true" duration-ms="717" started-at="2020-11-16T12:00:10 EST" finished-at="2020-11-16T12:00:11 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

@@ -9,7 +9,7 @@ public class Hooks {
 	
 	@BeforeClass
 	public void openBrowser() {
-		of.getdc().openSingletonBrowser("chrome", "https://www.amazon.com/?tag=admarketus-20&ref=pd_sl_a77559ED8D65AA122020110223");
+		of.getdc().openSingletonBrowser("chrome", "http://automationpractice.com/index.php");
 	}
 	
 	@AfterClass
