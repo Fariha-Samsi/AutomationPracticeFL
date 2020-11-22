@@ -35,8 +35,8 @@ public class CommonFunctionUtil {
 		driver.navigate().refresh();
 	}
 
-	public void getTitle() {
-		driver.getTitle();
+	public String getTitle() {
+		return driver.getTitle();
 	}
 
 	public String getWindowHandle() {
