@@ -2,13 +2,19 @@ package main;
 
 import org.openqa.selenium.WebDriver;
 
+import pageFactory.HomePageFactory;
+import pageFactory.LogInPageFactory;
+import pageFactory.SignUpPageFactory;
+
 public class ObjectFactory {
 
 	private CommonFunctionUtil cfu;
 	private ElementFunctionUtil efu;
 	private DriverClass dc;
 	private HomePageFactory hpf;
-	WebDriver driver;
+	private LogInPageFactory lpf;
+	private SignUpPageFactory spf;
+	//WebDriver driver;
 	
 
 	public CommonFunctionUtil getCfu() {
@@ -27,7 +33,18 @@ public class ObjectFactory {
 	}
 
 	public HomePageFactory getHpf() {
+		hpf= new HomePageFactory(DriverClass.getDriver());
 		return hpf;
+	}
+
+	public LogInPageFactory getLpf() {
+		lpf = new LogInPageFactory(DriverClass.getDriver());
+		return lpf;
+	}
+
+	public SignUpPageFactory getSpf() {
+		spf = new SignUpPageFactory(DriverClass.getDriver());
+		return spf;
 	}
 
 }

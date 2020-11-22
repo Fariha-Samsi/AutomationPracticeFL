@@ -1,9 +1,11 @@
-package main;
+package pageFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import main.DriverClass;
 
 public class HomePageFactory {
 	

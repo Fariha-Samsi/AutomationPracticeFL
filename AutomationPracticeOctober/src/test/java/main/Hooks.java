@@ -2,14 +2,19 @@ package main;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.asserts.SoftAssert;
 
 public class Hooks {
 
-	ObjectFactory of = new ObjectFactory();
+	protected ObjectFactory of = new ObjectFactory();
+	protected SoftAssert sa;
+
+	
 	
 	@BeforeClass
 	public void openBrowser() {
-		of.getdc().openSingletonBrowser("chrome", "http://automationpractice.com/index.php");
+		 of.getdc().openSingletonBrowser("chrome", "http://automationpractice.com/index.php");
+		  
 	}
 	
 	@AfterClass

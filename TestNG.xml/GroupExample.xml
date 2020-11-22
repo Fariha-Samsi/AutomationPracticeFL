@@ -1,0 +1,28 @@
+
+<suite name="Group Test">
+	<test> name="TestGroup"
+		<groups>
+			<run>
+				<include name="a"></include>
+				<include name="b"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testCases.HomePageTest"></class>
+		</classes>
+	</test>
+</suite>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</suite>

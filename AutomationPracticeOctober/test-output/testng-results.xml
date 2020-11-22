@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15679" started-at="2020-11-16T11:59:55 EST" finished-at="2020-11-16T12:00:11 EST">
+  <suite name="Default suite" duration-ms="26357" started-at="2020-11-19T00:11:38 EST" finished-at="2020-11-19T00:12:04 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15679" started-at="2020-11-16T11:59:55 EST" finished-at="2020-11-16T12:00:11 EST">
-      <class name="main.Runner">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:main.Runner@22a67b4]" name="openBrowser" is-config="true" duration-ms="10930" started-at="2020-11-16T11:59:55 EST" finished-at="2020-11-16T12:00:06 EST">
+    <test name="Default test" duration-ms="26357" started-at="2020-11-19T00:11:38 EST" finished-at="2020-11-19T00:12:04 EST">
+      <class name="testCases.SignUpPageTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testCases.SignUpPageTest@22a67b4]" name="openBrowser" is-config="true" duration-ms="15942" started-at="2020-11-19T00:11:38 EST" finished-at="2020-11-19T00:11:54 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="main()[pri:0, instance:main.Runner@22a67b4]" name="main" duration-ms="3960" started-at="2020-11-16T12:00:06 EST" finished-at="2020-11-16T12:00:10 EST">
+        <test-method status="PASS" signature="signUp()[pri:0, instance:testCases.SignUpPageTest@22a67b4]" name="signUp" duration-ms="9692" started-at="2020-11-19T00:11:54 EST" finished-at="2020-11-19T00:12:04 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- main -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:main.Runner@22a67b4]" name="quit" is-config="true" duration-ms="717" started-at="2020-11-16T12:00:10 EST" finished-at="2020-11-16T12:00:11 EST">
+        </test-method> <!-- signUp -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:testCases.SignUpPageTest@22a67b4]" name="quit" is-config="true" duration-ms="678" started-at="2020-11-19T00:12:04 EST" finished-at="2020-11-19T00:12:04 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- main.Runner -->
+      </class> <!-- testCases.SignUpPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
