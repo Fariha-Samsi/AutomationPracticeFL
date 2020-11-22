@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import pageFactory.HomePageFactory;
 import pageFactory.LogInPageFactory;
+import pageFactory.MyAccountPageFactory;
 import pageFactory.SignUpPageFactory;
 
 public class ObjectFactory {
@@ -14,6 +15,8 @@ public class ObjectFactory {
 	private HomePageFactory hpf;
 	private LogInPageFactory lpf;
 	private SignUpPageFactory spf;
+	private MyAccountPageFactory mapf;
+	
 	//WebDriver driver;
 	
 
@@ -45,6 +48,11 @@ public class ObjectFactory {
 	public SignUpPageFactory getSpf() {
 		spf = new SignUpPageFactory(DriverClass.getDriver());
 		return spf;
+	}
+	
+	public MyAccountPageFactory getmapf() {
+		mapf = new MyAccountPageFactory(DriverClass.getDriver());
+		return mapf;
 	}
 
 }
