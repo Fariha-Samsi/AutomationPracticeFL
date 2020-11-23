@@ -27,6 +27,9 @@ public class SignUpPageTest extends Hooks{
 		sc = new Select(of.getSpf().days);
 		sc.selectByIndex(3);
 		of.getCfu().sleep(5);
+		sc = new Select(of.getSpf().days);
+		sc.selectByIndex(3);
+		of.getCfu().sleep(5);
 		//of.getSpf().months.click();
 //		of.getSpf().years.click();
 //		of.getSpf().firstName.sendKeys("Ram");

@@ -1,14 +1,9 @@
 
-<suite name="Group Test">
-	<test> name="TestGroup"
-		<groups>
-			<run>
-				<include name="a"></include>
-				<include name="b"></include>
-			</run>
-		</groups>
-		<classes>
+<suite name="Positive Test">
+	<test> name="LoginTest"
+			<classes>
 			<class name="testCases.HomePageTest"></class>
+			<class name = "testCases.SignUpPageTest"></class>
 		</classes>
 	</test>
 </suite>
