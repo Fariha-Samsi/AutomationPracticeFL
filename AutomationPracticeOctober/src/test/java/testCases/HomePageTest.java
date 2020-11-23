@@ -9,7 +9,7 @@ public class HomePageTest extends Hooks {
 
 	String actual;
 	String expected;
-	
+
 	@Test
 	public void homePage() {
 		SoftAssert sa = new SoftAssert();
@@ -17,9 +17,11 @@ public class HomePageTest extends Hooks {
 		actual = of.getCfu().getTitle();
 		sa.assertEquals(actual, expected);
 		sa.assertAll();
-			}
-	
-	@Test
+		of.getCfu().sleep(2);
+
+	}
+
+	@Test 
 	public void signIn() {
 		sa = new SoftAssert();
 		of.getCfu().sleep(3);
@@ -28,7 +30,8 @@ public class HomePageTest extends Hooks {
 		actual = of.getCfu().getTitle();
 		sa.assertEquals(actual, expected);
 		sa.assertAll();
+		of.getCfu().sleep(2);
 	}
-	
-	
+
+
 }
