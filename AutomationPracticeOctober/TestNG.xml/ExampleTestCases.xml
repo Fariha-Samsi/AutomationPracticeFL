@@ -1,4 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="PositiveTesting">
+	
+	<test name="HomePage Testing">
+		<classes>
+			<class name="testCases.HomePageTest" />
 <suite name="PageTesting">
 	<groups>
 		<run>

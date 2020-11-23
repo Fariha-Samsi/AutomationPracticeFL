@@ -15,7 +15,7 @@ public class Hooks {
 	
 	@BeforeClass
 	public void openBrowser() {
-		 of.getdc().openSingletonBrowser("chrome", "http://automationpractice.com/index.php");
+		 of.getdc().openNonSingletonBrowser("chrome", "http://automationpractice.com/index.php");
 		  
 	}
 	

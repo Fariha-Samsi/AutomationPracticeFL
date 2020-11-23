@@ -10,7 +10,7 @@ public class HomePageTest extends Hooks {
 	String actual;
 	String expected;
 
-	@Test(groups = {"UI Test"})
+	@Test
 	public void homePage() {
 		SoftAssert sa = new SoftAssert();
 		expected = "My Store";
@@ -21,7 +21,8 @@ public class HomePageTest extends Hooks {
 
 	}
 
-	@Test (groups = {"UI Test"})
+
+	@Test 
 	public void signIn() {
 		sa = new SoftAssert();
 		of.getCfu().sleep(3);

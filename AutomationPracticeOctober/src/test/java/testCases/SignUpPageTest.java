@@ -1,5 +1,4 @@
 package testCases;
-
 import java.util.Random;
 import java.util.UUID;
 
@@ -17,7 +16,7 @@ public class SignUpPageTest extends Hooks {
 
 	String expected,actual;
 
-	@Test (groups = {"UI Test"}) 
+	@Test 
 	public void signUp() {
 
 		String uuid = UUID.randomUUID().toString();
@@ -47,7 +46,7 @@ public class SignUpPageTest extends Hooks {
 //		of.getSpf().State.sendKeys("la");
 //		of.getSpf().MobilePhone.sendKeys("1234567891");
 //		of.getSpf().AddressAlias.sendKeys("House");
-//		of.getSpf().RegisterBn.click();
+//		of.getSpf().RegisterBn.click();	
 	}
 		of.getCfu().sleep(1);
 		sc = new Select(of.getSpf().months);
@@ -72,7 +71,6 @@ public class SignUpPageTest extends Hooks {
 		expected = "MY ACCOUNT";
 		sa.assertEquals(actual, expected);
 		sa.assertAll();
-	
 	}		
-
+	}		
 }
