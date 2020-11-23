@@ -1,5 +1,5 @@
 package testCases;
-
+import java.util.Random;
 import java.util.UUID;
 
 import org.openqa.selenium.support.ui.Select;
@@ -16,7 +16,7 @@ public class SignUpPageTest extends Hooks {
 
 	String expected,actual;
 
-	@Test  
+	@Test 
 	public void signUp() {
 
 		String uuid = UUID.randomUUID().toString();
@@ -46,9 +46,9 @@ public class SignUpPageTest extends Hooks {
 //		of.getSpf().State.sendKeys("la");
 //		of.getSpf().MobilePhone.sendKeys("1234567891");
 //		of.getSpf().AddressAlias.sendKeys("House");
-//		of.getSpf().RegisterBn.click();
-	
-	//	of.getCfu().sleep(1);
+//		of.getSpf().RegisterBn.click();	
+	}
+		of.getCfu().sleep(1);
 		sc = new Select(of.getSpf().months);
 		sc.selectByIndex(10);
 		of.getCfu().sleep(1);
@@ -71,6 +71,6 @@ public class SignUpPageTest extends Hooks {
 		expected = "MY ACCOUNT";
 		sa.assertEquals(actual, expected);
 		sa.assertAll();
-	
+	}		
 	}		
 }

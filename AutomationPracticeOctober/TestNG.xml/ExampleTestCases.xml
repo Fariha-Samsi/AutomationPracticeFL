@@ -4,6 +4,19 @@
 	<test name="HomePage Testing">
 		<classes>
 			<class name="testCases.HomePageTest" />
+<suite name="PageTesting">
+	<groups>
+		<run>
+			<include name="UI Test" />
+		</run>
+	</groups>
+	<test name="HomePage Testing">
+		<classes>
+			<class name="testCases.HomePageTest" />
+		</classes>
+	</test>
+	<test name="SignUpPage Testing">
+		<classes>
 			<class name="testCases.SignUpPageTest" />
 		</classes>
 	</test>
